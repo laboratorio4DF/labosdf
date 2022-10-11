@@ -24,7 +24,7 @@ xs = []
 ys = []
 for n in range(5, 10):
     xs.append(n)
-    ys.append(n * n)
+    ys.append(n * n) # camobio rápido
 
 print('El largo de la lista es:')
 print(len(xs))
