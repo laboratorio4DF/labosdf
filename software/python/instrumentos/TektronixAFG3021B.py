@@ -30,8 +30,9 @@ class AFG3021B:
     def getFrequency(self):
         return self._generador.query_ascii_values('FREQ?')
         
-    def setAmplitude(self, freq):
-        print('falta')
+    def setAmplitude(self, amp):
+        self._generador.write(f'SOURce1:VOLTage:LEVel:IMMediate:AMPLitude {amp}V') 
+        
         
     def getAmplitude(self):
         print('falta')
